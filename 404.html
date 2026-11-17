@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doodlecomms</title>
+<script>
+// Some apps (like Facebook) lowercase links, so /73_android/... can't be found.
+// Send those to the right address; send anything else to the links page.
+(function () {
+  var p = location.pathname, low = p.toLowerCase();
+  var dest = "/";
+  if (low.indexOf("/73_android") === 0) {
+    dest = "/73_Android" + low.slice("/73_android".length);
+    dest = dest.replace(/\.html\/$/, ".html");
+  }
+  if (dest !== p) location.replace(dest + location.hash);
+})();
+</script>
+<style>
+body{margin:0;font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#f6f5f1;color:#1c1d1f;text-align:center;padding:60px 16px}
+@media (prefers-color-scheme: dark){body{background:#141518;color:#ececec}a{color:#fb923c}}
+a{color:#c2410c;font-weight:600}
+</style>
+</head>
+<body>
+<p>Page not found. <a href="/">Go to Doodlecomms links</a></p>
+</body>
+</html>
