@@ -44,6 +44,14 @@ header p{margin:0;color:var(--muted)}
 .support{text-align:center;margin-top:22px}
 .support .btn{display:inline-block;padding:10px 18px;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:999px}
 .support .btn:hover{border-color:var(--accent);color:var(--accent);filter:none}
+.gear{margin-top:30px}
+.gear>h2{font-size:1.3rem;margin:0 0 2px;text-align:center}
+.gear>p{margin:0 0 14px;color:var(--muted);text-align:center}
+.kit{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px}
+.kit a{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.98rem}
+.kit a::after{content:"›";color:var(--accent);font-size:1.3rem;line-height:1}
+.kit a:hover{border-color:var(--accent);color:var(--accent)}
+.disclosure{margin:10px 0 0;color:var(--muted);font-size:.78rem;text-align:center}
 footer{margin-top:30px;text-align:center;color:var(--muted);font-size:.85rem}
 footer a{color:inherit}
 </style>
@@ -88,6 +96,23 @@ footer a{color:inherit}
     <a class="btn" href="https://doodlecomms.github.io/73_Android/">Open 73 Android</a>
   </div>
 </div>
+
+<section class="gear">
+  <h2>Gear from my videos</h2>
+  <p>Tap an item to see it on Amazon.</p>
+  <div class="item">
+    <h2>GhostNet JS8Call</h2>
+    <ul class="kit">
+      <li><a href="https://link.amazon/B0iGJBYmr" target="_blank" rel="sponsored noopener">Wire for dipole</a></li>
+      <li><a href="https://link.amazon/B02C0pFkh" target="_blank" rel="sponsored noopener">BNC binding post for dipole</a></li>
+      <li><a href="https://link.amazon/B0aItPpri" target="_blank" rel="sponsored noopener">USB-C to USB OTG adapter</a></li>
+      <li><a href="https://link.amazon/B08b7skTd" target="_blank" rel="sponsored noopener">SMA male to BNC female</a></li>
+      <li><a href="https://link.amazon/B0dmtcWzd" target="_blank" rel="sponsored noopener">25 ft RG58 coax</a></li>
+      <li><a href="https://link.amazon/B0faWtsHc" target="_blank" rel="sponsored noopener">RTL-SDR</a></li>
+    </ul>
+  </div>
+  <p class="disclosure">As an Amazon Associate I earn from qualifying purchases.</p>
+</section>
 
 <div class="support">
   <a class="btn" href="https://www.paypal.com/donate/?business=KWJVRWHEDKU7J&amp;no_recurring=0&amp;item_name=Supports+the+73+Android+project&amp;currency_code=USD" target="_blank" rel="noopener">♥ Support 73 Android</a>
